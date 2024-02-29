@@ -1,0 +1,66 @@
+.product-info-container {
+  width: 664px;
+  height: 556px;
+}
+
+.product-info-title {
+  font-family: Montserrat;
+  font-size: 40px;
+  line-height: 40px;
+  color: #042a30;
+}
+
+.conveyor-width-container {
+  margin-top: 40px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.conveyor-width-title {
+  font-family: Arial, sans-serif;
+  width: fit-content;
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #292e2f;
+}
+
+.conveyor-width-list {
+  width: 288px;
+  height: 76px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.conveyor-width-list li button {
+  width: 48px;
+  height: 32px;
+  padding: 11px, 14px, 11px, 18px;
+  border-radius: 4px;
+  gap: 10px;
+  background: #e0ecf0;
+  font-family: Arial, sans-serif;
+  /* text */
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+/* button "Custom" */
+.conveyor-width-list li:last-child button {
+  width: 108px;
+  height: 32px;
+  padding: 0 14px;
+}
+
+.conveyor-width-list li button:focus {
+  background: #146b87;
+  transition: all 0.5s ease;
+  color: #ffffff;
+}

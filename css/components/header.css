@@ -1,0 +1,23 @@
+header div {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 372px;
+}
+
+header div span {
+  font-family: "SF Pro Text", sans-serif;
+  font-size: 12px;
+}
+
+header div span:nth-child(1) {
+  color: #042a30;
+}
+
+header div span:nth-child(2) {
+  color: #697071;
+}
+
+header div span:nth-child(3) {
+  color: #a3a3a3;
+}
