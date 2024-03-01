@@ -26,6 +26,9 @@ button {
   cursor: pointer;
   outline: none;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -33,3 +36,4 @@ button {
   margin: 0 auto;
   padding-top: 32px;
 }
+

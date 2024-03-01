@@ -28,27 +28,142 @@
 
         <!-- section form -->
 
-        <div class="product-info-container">
+        <section class="product-info-container">
           <h2 class="product-info-title">Incline & Decline Conveyors</h2>
-          <div class="conveyor-width-container">
-            <p class="conveyor-width-title">
-              Conveyor Belt Width, in
-              <img src="./assets/svg/infoCircle.svg" alt="infoCircle" />
-            </p>
-            <ul class="conveyor-width-list">
-              <li><button>10”</button></li>
-              <li><button>18”</button></li>
-              <li><button>24”</button></li>
-              <li><button>30”</button></li>
-              <li><button>36”</button></li>
-              <li><button>42”</button></li>
-              <li><button>48”</button></li>
-              <li><button>54”</button></li>
-              <li><button>CUSTOM</button></li>
-            </ul>
+
+          <div class="order-details-container">
+            <div>
+              <!-- Conveyer -->
+              <div class="conveyor-width-container">
+                <p class="conveyor-width-title">
+                  Conveyor Belt Width, in
+                  <img src="./assets/svg/infoCircle.svg" alt="infoCircle" />
+                </p>
+                <ul class="conveyor-width-list">
+                  <li><button type="button">10”</button></li>
+                  <li><button type="button">18”</button></li>
+                  <li><button type="button">24”</button></li>
+                  <li><button type="button">30”</button></li>
+                  <li><button type="button">36”</button></li>
+                  <li><button type="button">42”</button></li>
+                  <li><button type="button">48”</button></li>
+                  <li><button type="button">54”</button></li>
+                  <li><button type="button">CUSTOM</button></li>
+                </ul>
+              </div>
+
+              <!-- Bed -->
+              <div class="bed-length-container">
+                <p class="bed-length-title">
+                  Bed Section Length, in
+                  <img src="./assets/svg/infoCircle.svg" alt="infoCircle" />
+                </p>
+                <div class="bed-length-counter-controls">
+                  <button type="button">
+                    <img
+                      src="./assets/svg/ArrowLeftButton.svg"
+                      alt="infoCircle"
+                    />
+                  </button>
+                  <span>0</span>
+                  <button type="button">
+                    <img
+                      src="./assets/svg/ArrowRightButton.svg"
+                      alt="infoCircle"
+                    />
+                  </button>
+                </div>
+              </div>
+
+              <!-- Checkbox -->
+              <div class="checkbox-options-container">
+                <div>
+                  <input type="checkbox" id="chainDrivenFeeder" />
+                  <label for="chainDrivenFeeder">Chain Driven Feeder</label>
+                  <img src="./assets/svg/infoCircle.svg" alt="infoCircle" />
+                </div>
+
+                <div>
+                  <input type="checkbox" id="additionalSupportStructures" />
+                  <label for="additionalSupportStructures"
+                    >Additional Support Structures</label
+                  >
+                  <img src="./assets/svg/infoCircle.svg" alt="infoCircle" />
+                </div>
+
+                <div>
+                  <input type="checkbox" id="kneeBraces" />
+                  <label for="kneeBraces">Knee Braces</label>
+                  <img src="./assets/svg/infoCircle.svg" alt="infoCircle" />
+                </div>
+
+                <div>
+                  <input type="checkbox" id="enhancedSupport" />
+                  <label for="enhancedSupport">Enhanced Support</label>
+                  <img src="./assets/svg/infoCircle.svg" alt="infoCircle" />
+                </div>
+              </div>
+            </div>
+            <!-- Form -->
+            <form class="request-form">
+              <div class="request-form-product-details">
+                <div class="request-form-sku-info">
+                  <span class="sku">SKU:</span>
+                  <span class="product-code">WMD-2446F-GRYI</span>
+                </div>
+
+                <div class="request-indicator">
+                  <img src="./assets/svg/CheckFlag.svg" alt="Checkmark" />
+                  <span>UPON REQUEST</span>
+                </div>
+
+                <div class="rating-container">
+                  <span class="stars">
+                    <img src="./assets/svg/RatingStars.svg" alt="RatingStars" />
+                    (20)
+                  </span>
+                  <span class="read">
+                    READ
+                    <!-- Here I could use the same svg as for the button, but it seemed to me that they are a little different -->
+                    <img
+                      src="./assets/svg/ReadArrowIcon.svg"
+                      alt="ReadArrowIcon"
+                    />
+                  </span>
+                </div>
+              </div>
+
+              <div class="divider"></div>
+
+              <div class="request-form-price-details">
+                <p class="price-details">
+                  FROM
+                  <span> $22360 </span>
+                  <span class="price-amount-size">EA</span> <span>*</span>
+                </p>
+
+                <div class="product-quantity-container">
+                  <button type="button">
+                    <img src="./assets/svg/Minus.svg" alt="Minus" />
+                  </button type="button">
+                  <span>0</span>
+                  <button type="button">
+                    <img src="./assets/svg/Plus.svg" alt="Plus" />
+                  </button type="button">
+                </div>
+
+                <button type="button" class="submit-button">
+                  <img src="./assets/svg/Flag.svg" alt="Flag" /> REQUEST
+                </button>
+
+                <p class="final-price-disclaimer">
+                  *Final price is defined after a consultation with our
+                  specialist due to actual conditions of use.
+                </p>
+              </div>
+            </form>
           </div>
-          <form></form>
-        </div>
+        </section>
       </main>
     </div>
   </body>
