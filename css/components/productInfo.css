@@ -24,6 +24,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  position: relative;
 }
 
 /* here I do it like this because both titles have the same styles */
@@ -38,6 +39,46 @@
   color: #292e2f;
 }
 
+.conveyor-width-title svg {
+  cursor: pointer;
+}
+
+.conveyor-width-title svg path {
+  transition: fill 0.7s ease;
+}
+
+.conveyor-width-title svg:hover path {
+  fill: #146b87;
+}
+
+.info-popup {
+  width: 136px;
+  height: 0;
+  padding: 16px;
+  position: absolute;
+  top: -125px;
+  right: 25px;
+  border-radius: 8px;
+  gap: 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px 0px #0000001f;
+  opacity: 0;
+  transition: opacity 0.7s ease, height 0.7s ease;
+  overflow: hidden;
+}
+
+.info-popup.active {
+  display: block;
+  height: 84px;
+  opacity: 1;
+}
+
+.info-popup p {
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+}
+
 .conveyor-width-list {
   width: 288px;
   height: 76px;
@@ -49,17 +90,20 @@
 .conveyor-width-list li button {
   width: 48px;
   height: 32px;
-  padding: 11px, 14px, 11px, 18px;
   border-radius: 4px;
   gap: 10px;
   background: #e0ecf0;
   font-family: Arial, sans-serif;
-  /* text */
   font-size: 14px;
   font-weight: 700;
   line-height: 14px;
   letter-spacing: 0em;
   text-align: center;
+}
+
+.conveyor-width-list li button.selected {
+  background-color: #146b87;
+  color: #ffffff;
 }
 
 .conveyor-width-list li:last-child button {
@@ -72,6 +116,13 @@
   background: #146b87;
   transition: all 0.5s ease;
   color: #ffffff;
+}
+
+.conveyor-width-counter-custom {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
 }
 
 /* Bed */
@@ -90,26 +141,29 @@
   margin-top: 8px;
 }
 
-.bed-length-counter-controls button {
+.bed-length-counter-controls button,
+.conveyor-width-counter-custom button {
   width: 44px;
   height: 44px;
   border-radius: 8px;
   gap: 10px;
 }
 
-.bed-length-counter-controls span {
+.bed-length-counter-controls span,
+.conveyor-width-counter-custom span {
   width: 74px;
   height: 42px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
+  font-family: Arial, sans-serif;
   color: #424849;
   background: #f2f5f5;
   border: 1px solid #d6dcdd;
 }
 
-/* */
+/*Checkbox*/
 
 .checkbox-options-container {
   width: 316px;
@@ -185,7 +239,7 @@
 
 .request-form span {
   font-family: Arial, sans-serif;
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 600;
 }
 
