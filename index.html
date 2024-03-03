@@ -24,6 +24,7 @@
       <main>
         <!--section images about product -->
         <section class="product-images">
+          <h2 class="product-info-title-mobile">Incline & Decline Conveyors</h2>
           <div class="fullscreen-overlay"></div>
           <div class="slider-container">
             <div class="slide">
@@ -74,31 +75,33 @@
           </div>
 
           <div class="thumbnail-container">
-            <img
-              src="./assets/images/ConveyorOne.png"
-              alt="Thumbnail 1"
-              data-slide-index="0"
-            />
-            <img
-              src="./assets/images/ConveyorTwo.png"
-              alt="Thumbnail 2"
-              data-slide-index="1"
-            />
-            <img
-              src="./assets/images/ConveyorThree.png"
-              alt="Thumbnail 3"
-              data-slide-index="2"
-            />
-            <img
-              src="./assets/images/ConveyorFour.png"
-              alt="Thumbnail 4"
-              data-slide-index="3"
-            />
-            <img
-              src="./assets/images/ConveyorFive.png"
-              alt="Thumbnail 5"
-              data-slide-index="4"
-            />
+            <div class="thumbnails-inner">
+              <img
+                src="./assets/images/ConveyorOne.png"
+                alt="Thumbnail 1"
+                data-slide-index="0"
+              />
+              <img
+                src="./assets/images/ConveyorTwo.png"
+                alt="Thumbnail 2"
+                data-slide-index="1"
+              />
+              <img
+                src="./assets/images/ConveyorThree.png"
+                alt="Thumbnail 3"
+                data-slide-index="2"
+              />
+              <img
+                src="./assets/images/ConveyorFour.png"
+                alt="Thumbnail 4"
+                data-slide-index="3"
+              />
+              <img
+                src="./assets/images/ConveyorFive.png"
+                alt="Thumbnail 5"
+                data-slide-index="4"
+              />
+            </div>
           </div>
         </section>
 
@@ -215,31 +218,42 @@
               </div>
 
               <!-- Checkbox -->
-              <div class="checkbox-options-container">
-                <div>
-                  <input type="checkbox" id="chainDrivenFeeder" />
-                  <label for="chainDrivenFeeder">Chain Driven Feeder</label>
-                  <img src="./assets/svg/infoCircle.svg" alt="infoCircle" />
+              <div class="options-dropdown">
+                <div class="additional-options-container">
+                  <p>
+                    Additional options
+                    <img src="./assets/svg/infoCircle.svg" alt="infoCircle" />
+                  </p>
+                  <button class="select-options-btn">Select options
+                    <img class="arrow-icon" src="./assets/svg/ArrowBottom.svg" alt="ArrowBottom.svg">
+                  </button>
                 </div>
+                <div class="checkbox-options-container">
+                  <div>
+                    <input type="checkbox" id="chainDrivenFeeder" />
+                    <label for="chainDrivenFeeder">Chain Driven Feeder</label>
+                    <img src="./assets/svg/infoCircle.svg" alt="infoCircle" />
+                  </div>
 
-                <div>
-                  <input type="checkbox" id="additionalSupportStructures" />
-                  <label for="additionalSupportStructures"
-                    >Additional Support Structures</label
-                  >
-                  <img src="./assets/svg/infoCircle.svg" alt="infoCircle" />
-                </div>
+                  <div>
+                    <input type="checkbox" id="additionalSupportStructures" />
+                    <label for="additionalSupportStructures"
+                      >Additional Support Structures</label
+                    >
+                    <img src="./assets/svg/infoCircle.svg" alt="infoCircle" />
+                  </div>
 
-                <div>
-                  <input type="checkbox" id="kneeBraces" />
-                  <label for="kneeBraces">Knee Braces</label>
-                  <img src="./assets/svg/infoCircle.svg" alt="infoCircle" />
-                </div>
+                  <div>
+                    <input type="checkbox" id="kneeBraces" />
+                    <label for="kneeBraces">Knee Braces</label>
+                    <img src="./assets/svg/infoCircle.svg" alt="infoCircle" />
+                  </div>
 
-                <div>
-                  <input type="checkbox" id="enhancedSupport" />
-                  <label for="enhancedSupport">Enhanced Support</label>
-                  <img src="./assets/svg/infoCircle.svg" alt="infoCircle" />
+                  <div>
+                    <input type="checkbox" id="enhancedSupport" />
+                    <label for="enhancedSupport">Enhanced Support</label>
+                    <img src="./assets/svg/infoCircle.svg" alt="infoCircle" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -250,6 +264,10 @@
                   <span class="sku">SKU:</span>
                   <span class="product-code">WMD-2446F-GRYI</span>
                 </div>
+
+                <div class="request-indicator-container">
+
+
 
                 <div class="request-indicator">
                   <img src="./assets/svg/CheckFlag.svg" alt="Checkmark" />
@@ -265,11 +283,20 @@
                     READ
                     <!-- Here I could use the same svg as for the button, but it seemed to me that they are a little different -->
                     <img
-                      src="./assets/svg/ReadArrowIcon.svg"
-                      alt="ReadArrowIcon"
-                    />
+                    src="./assets/svg/ReadArrowIcon.svg"
+                    alt="ReadArrowIcon"
+                  />
                   </span>
+
+                  <img class="read-arrow-icon-mobile"
+                  src="./assets/svg/ReadArrowIcon.svg"
+                  alt="ReadArrowIcon"
+                />
+
                 </div>
+
+              </div>
+
               </div>
 
               <div class="divider"></div>
@@ -279,6 +306,11 @@
                   FROM
                   <span> $22360 </span>
                   <span class="price-amount-size">EA</span> <span>*</span>
+                </p>
+
+                <p class="final-price-disclaimer-mobile">
+                  *Final price is defined after a consultation with our
+                  specialist due to actual conditions of use.
                 </p>
 
                 <div class="product-quantity-container">

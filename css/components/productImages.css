@@ -2,7 +2,6 @@
   position: relative;
   width: 652px;
   height: 522px;
-  overflow: hidden;
 }
 
 .slider-container {
@@ -12,8 +11,6 @@
   height: 434px;
 }
 
-
-
 .slide {
   flex: 0 0 auto;
   width: 652px;
@@ -21,7 +18,7 @@
   border-radius: 8px;
   border: 1px solid #ecf2f3;
   position: relative;
-  opacity: 1; 
+  opacity: 1;
   transition: opacity 0.5s ease;
 }
 
@@ -108,7 +105,6 @@
   z-index: 9999;
 }
 
-
 .slider-container.fullscreen .slide {
   width: 70%;
   height: 70%;
@@ -161,4 +157,57 @@
 
 .thumbnail-container img.active {
   border: 1px solid #f1582b;
+}
+
+@media screen and (max-width: 360px) {
+  .product-images {
+    width: 360px;
+    height: 388px;
+  }
+
+  .slider-container {
+    width: 360px;
+    height: 240px;
+  }
+
+  .slide {
+    width: 360px;
+    height: 240px;
+    border-radius: 0px;
+  }
+
+  .controls {
+    display: none;
+  }
+
+  .fullscreen-container {
+    display: none;
+  }
+
+  .image-description {
+    width: 155px;
+    bottom: 85px;
+  }
+
+  .slide-counter {
+    display: none;
+  }
+
+  .thumbnail-container {
+    display: block;
+    gap: 8px;
+    margin-top: 16px;
+    padding: 0 12px;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .thumbnail-container .thumbnails-inner {
+    display: inline-block;
+  }
+
+  .thumbnail-container img {
+    width: 70px;
+    height: 48px;
+  }
 }

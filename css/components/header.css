@@ -1,6 +1,6 @@
 header div {
   display: flex;
-  gap: 8px;
+  column-gap: 8px;
   align-items: center;
   width: 372px;
 }
@@ -10,14 +10,24 @@ header div span {
   font-size: 12px;
 }
 
-header div span:nth-child(1) {
+header div span:nth-of-type(1) {
   color: #042a30;
 }
 
-header div span:nth-child(2) {
+header div span:nth-of-type(2) {
   color: #697071;
 }
 
-header div span:nth-child(3) {
+header div span:nth-of-type(3) {
   color: #a3a3a3;
+}
+
+@media screen and (max-width: 360px) {
+  header div {
+    column-gap: 8px;
+    row-gap: 4px;
+    width: 320px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
 }

@@ -203,3 +203,17 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 });
 
+// select options mobile
+
+document.addEventListener("DOMContentLoaded", function() {
+  const selectOptionsBtn = document.querySelector(".select-options-btn");
+  const optionsContainer = document.querySelector(".checkbox-options-container");
+  const arrowIcon = selectOptionsBtn.querySelector(".arrow-icon");
+
+  selectOptionsBtn.addEventListener("click", function(event) {
+    optionsContainer.classList.toggle("show");
+    arrowIcon.classList.toggle("rotate");
+    event.stopPropagation(); 
+  });
+});
+
