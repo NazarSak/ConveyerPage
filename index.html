@@ -42,6 +42,9 @@
             <div class="slide">
               <img src="./assets/images/ConveyorFive.png" alt="Image 5" />
             </div>
+            <div class="slide">
+              <img src="./assets/images/ConveyorSix.png" alt="ConveyorSix" />
+            </div>
           </div>
 
           <div class="controls">
@@ -74,34 +77,55 @@
             <span>1 / 5</span>
           </div>
 
-          <div class="thumbnail-container">
-            <div class="thumbnails-inner">
+          <div class="slider-controls-container">
+            <button class="left-arrow-button">
               <img
-                src="./assets/images/ConveyorOne.png"
-                alt="Thumbnail 1"
-                data-slide-index="0"
+                src="./assets/svg/ArrowLeftButton.svg"
+                alt="ArrowLeftButton"
               />
-              <img
-                src="./assets/images/ConveyorTwo.png"
-                alt="Thumbnail 2"
-                data-slide-index="1"
-              />
-              <img
-                src="./assets/images/ConveyorThree.png"
-                alt="Thumbnail 3"
-                data-slide-index="2"
-              />
-              <img
-                src="./assets/images/ConveyorFour.png"
-                alt="Thumbnail 4"
-                data-slide-index="3"
-              />
-              <img
-                src="./assets/images/ConveyorFive.png"
-                alt="Thumbnail 5"
-                data-slide-index="4"
-              />
+            </button>
+
+            <div class="thumbnail-container">
+              <div class="thumbnails-inner">
+                <img
+                  src="./assets/images/ConveyorOne.png"
+                  alt="Thumbnail 1"
+                  data-slide-index="0"
+                />
+                <img
+                  src="./assets/images/ConveyorTwo.png"
+                  alt="Thumbnail 2"
+                  data-slide-index="1"
+                />
+                <img
+                  src="./assets/images/ConveyorThree.png"
+                  alt="Thumbnail 3"
+                  data-slide-index="2"
+                />
+                <img
+                  src="./assets/images/ConveyorFour.png"
+                  alt="Thumbnail 4"
+                  data-slide-index="3"
+                />
+                <img
+                  src="./assets/images/ConveyorFive.png"
+                  alt="Thumbnail 5"
+                  data-slide-index="4"
+                />
+                <img
+                  src="./assets/images/ConveyorSix.png"
+                  alt="Thumbnail 6"
+                  data-slide-index="5"
+                />
+              </div>
             </div>
+
+            <button class="right-arrow-button">
+              <img
+                src="./assets/svg/ArrowRightButton.svg"
+                alt="ArrowRightButton"
+              />
+            </button>
           </div>
         </section>
 
@@ -224,8 +248,13 @@
                     Additional options
                     <img src="./assets/svg/infoCircle.svg" alt="infoCircle" />
                   </p>
-                  <button class="select-options-btn">Select options
-                    <img class="arrow-icon" src="./assets/svg/ArrowBottom.svg" alt="ArrowBottom.svg">
+                  <button class="select-options-btn">
+                    Select options
+                    <img
+                      class="arrow-icon"
+                      src="./assets/svg/ArrowBottom.svg"
+                      alt="ArrowBottom.svg"
+                    />
                   </button>
                 </div>
                 <div class="checkbox-options-container">
@@ -258,6 +287,7 @@
               </div>
             </div>
             <!-- Form -->
+
             <form class="request-form">
               <div class="request-form-product-details">
                 <div class="request-form-sku-info">
@@ -266,37 +296,35 @@
                 </div>
 
                 <div class="request-indicator-container">
+                  <div class="request-indicator">
+                    <img src="./assets/svg/CheckFlag.svg" alt="Checkmark" />
+                    <span>UPON REQUEST</span>
+                  </div>
 
+                  <div class="rating-container">
+                    <span class="stars">
+                      <img
+                        src="./assets/svg/RatingStars.svg"
+                        alt="RatingStars"
+                      />
+                      (20)
+                    </span>
+                    <span class="read">
+                      READ
+                      <!-- Here I could use the same svg as for the button, but it seemed to me that they are a little different -->
+                      <img
+                        src="./assets/svg/ReadArrowIcon.svg"
+                        alt="ReadArrowIcon"
+                      />
+                    </span>
 
-
-                <div class="request-indicator">
-                  <img src="./assets/svg/CheckFlag.svg" alt="Checkmark" />
-                  <span>UPON REQUEST</span>
-                </div>
-
-                <div class="rating-container">
-                  <span class="stars">
-                    <img src="./assets/svg/RatingStars.svg" alt="RatingStars" />
-                    (20)
-                  </span>
-                  <span class="read">
-                    READ
-                    <!-- Here I could use the same svg as for the button, but it seemed to me that they are a little different -->
                     <img
-                    src="./assets/svg/ReadArrowIcon.svg"
-                    alt="ReadArrowIcon"
-                  />
-                  </span>
-
-                  <img class="read-arrow-icon-mobile"
-                  src="./assets/svg/ReadArrowIcon.svg"
-                  alt="ReadArrowIcon"
-                />
-
+                      class="read-arrow-icon-mobile"
+                      src="./assets/svg/ReadArrowIcon.svg"
+                      alt="ReadArrowIcon"
+                    />
+                  </div>
                 </div>
-
-              </div>
-
               </div>
 
               <div class="divider"></div>
@@ -335,7 +363,7 @@
                   </button>
                 </div>
 
-                <button type="button" class="submit-button">
+                <button type="submit" class="submit-button">
                   <img src="./assets/svg/Flag.svg" alt="Flag" /> REQUEST
                 </button>
 

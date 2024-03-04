@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
         counter.textContent = `${index + 1} / ${slides.length}`;
-        // Додамо клас active до відповідної мініатюри
+        
         thumbnails.forEach((thumbnail, i) => {
             if (i === index) {
                 thumbnail.classList.add('active');
